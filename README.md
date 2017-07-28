@@ -1,6 +1,6 @@
 # react-input-validator
 
-A customizable and extendible form validator for react apps
+A customisable and extendible form validator for react apps
 
 ## Usage
 
@@ -69,9 +69,13 @@ export default LoginForm
 
 All inputs have this following options available
 
+
 `required` => force the input to be not empty
+
 `onChange` => onChange event
+
 `onBlur` => onBlur event
+
 
 And all the default parameters for an input like `className`, `id`, `onFocus`, etc.
 
@@ -99,10 +103,15 @@ export default PhoneInput
 #### options
 
 `min` => minimum of characters number
+
 `max` => maximun of characters number
+
 `upper` => require uppercase character 
+
 `lower` =>  require lowercase character
+
 `special` => require special character
+
 `number` => require number character
 
 #### example
