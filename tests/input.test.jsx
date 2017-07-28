@@ -16,7 +16,6 @@ it('should render a input id', () => {
 it('should called onChange event', () => {
   const handleChange = jest.fn()
   const wrapper = mount(<Input id="test" onChange={handleChange} />)
-  console.log(wrapper.find('#test'))
   wrapper.find('#test').simulate('keyDown', { which: 'a' })
   expect(handleChange).toHaveBeenCalled()
 })

@@ -26,7 +26,6 @@ export const Input = ({
   }
 
   const handleChange = ev => {
-    console.log('there is change', onChange)
     if (onChange) {
       return onChange({
         ...ev,
