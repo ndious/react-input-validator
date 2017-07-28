@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow, mount } from 'enzyme'
 
-import { Input } from '../src/input'
+import Input from '../src/input'
 
 it('should render a input', () => {
     const wrapper = shallow(<Input />)

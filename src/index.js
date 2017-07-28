@@ -5,5 +5,5 @@ import Password from './password'
 export default {
   Text,
   Email,
-  Password
+  Password,
 }

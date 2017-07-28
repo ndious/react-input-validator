@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Input = ({
+const Input = ({
   type, name, id,
   validator, required,
   onBlur, onChange,
@@ -55,3 +55,5 @@ export const Input = ({
     />
   )
 }
+
+export default Input

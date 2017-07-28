@@ -1,5 +1,5 @@
 import React from 'react'
-import { Input } from './input'
+import Input from './input'
 
 const Password = ({min, max, upper, lower, special, number, ...props}) => {
   let validator = '^'

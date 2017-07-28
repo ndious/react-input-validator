@@ -1,5 +1,5 @@
 import React from 'react'
-import {Input }from './input'
+import Input from './input'
 
 const Text = ({validate, ...props}) => (
   <Input type="text" validator={validate || /.*/} {...props} />
