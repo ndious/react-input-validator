@@ -8,22 +8,14 @@ ShallowWrapper {
     "findWhereUnwrapped": [Function],
   },
   "length": 1,
-  "node": <input
-    id={undefined}
-    name={undefined}
-    onBlur={[Function]}
-    onChange={[Function]}
-    required={true}
-    type={undefined}
+  "node": <Input
+    type="text"
+    validator={/\\.\\*/}
 />,
   "nodes": Array [
-    <input
-      id={undefined}
-      name={undefined}
-      onBlur={[Function]}
-      onChange={[Function]}
-      required={true}
-      type={undefined}
+    <Input
+      type="text"
+      validator={/\\.\\*/}
 />,
   ],
   "options": Object {},
@@ -32,7 +24,7 @@ ShallowWrapper {
       "_calledComponentWillUnmount": false,
       "_compositeType": 2,
       "_context": Object {},
-      "_currentElement": <Input />,
+      "_currentElement": <Text />,
       "_debugID": 1,
       "_hostContainerInfo": null,
       "_hostParent": null,
@@ -60,25 +52,17 @@ ShallowWrapper {
       "_pendingReplaceState": false,
       "_pendingStateQueue": null,
       "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <input
-          id={undefined}
-          name={undefined}
-          onBlur={[Function]}
-          onChange={[Function]}
-          required={true}
-          type={undefined}
+        "_currentElement": <Input
+          type="text"
+          validator={/\\.\\*/}
 />,
         "_debugID": 2,
-        "_renderedOutput": <input
-          id={undefined}
-          name={undefined}
-          onBlur={[Function]}
-          onChange={[Function]}
-          required={true}
-          type={undefined}
+        "_renderedOutput": <Input
+          type="text"
+          validator={/\\.\\*/}
 />,
       },
-      "_renderedNodeType": 0,
+      "_renderedNodeType": 1,
       "_rootNodeID": 0,
       "_topLevelWrapper": null,
       "_updateBatchNumber": null,
@@ -88,6 +72,6 @@ ShallowWrapper {
     "render": [Function],
   },
   "root": [Circular],
-  "unrendered": <Input />,
+  "unrendered": <Text />,
 }
 `;

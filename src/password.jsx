@@ -7,7 +7,7 @@ const Password = ({min, max, upper, lower, special, number, ...props}) => {
   validator += upper ? '(?=.*[A-Z])' : ''
   validator += number ? '(?=.*\\d)' : ''
   validator += special ? '(?=.*[$@$!%*?&])' : ''
-  validator += `[\\w\\d$@$!%*?&]{${min || 0},${max || ''}}`
+  validator += `[\\w\\d$@$!%*?&]{${min || 0},${max || ''}}$`
 
   return (
     <Input

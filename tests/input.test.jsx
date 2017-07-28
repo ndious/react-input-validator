@@ -80,7 +80,7 @@ it('should be onError if is empty or not a digit', () => {
   input.simulate('change', {target: {value: ''} })
   expect(invalid).toHaveBeenCalled()
   input.simulate('change', {target: {value: 'a'} })
-  expect(invalid).toHaveBeenCalled()
+  expect(invalid).toHaveBeenCalledTimes(2)
 })
 
 it('should be not in onError if is empty or a digit', () => {
@@ -98,7 +98,7 @@ it('should be not in onError if is empty or a digit', () => {
   input.simulate('change', {target: {value: '12'} })
   expect(valid).toHaveBeenCalled()
   input.simulate('change', {target: {value: ''} })
-  expect(valid).toHaveBeenCalled()
+  expect(valid).toHaveBeenCalledTimes(2)
   input.simulate('change', {target: {value: 'a'} })
   expect(invalid).toHaveBeenCalled()
 })

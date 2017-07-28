@@ -1,10 +1,10 @@
 import React from 'react'
 import { shallow, mount } from 'enzyme'
 
-import Email from '../src/email'
+import Text from '../src/text'
 
 it('should render a input', () => {
-    const wrapper = shallow(<Email />)
+    const wrapper = shallow(<Text />)
     expect(wrapper).toMatchSnapshot()
 });
 
@@ -18,10 +18,10 @@ it('should validate the value', () => {
       invalid()
     }
   }
-  const wrapper = mount(<Email id="test" onChange={handleChange} />)
+  const wrapper = mount(<Text validate={/\d+/} onChange={handleChange} />)
   const input = wrapper.find('input')
   input.simulate('change', {target: {value: 'foo'} })
   expect(invalid).toHaveBeenCalled()
-  input.simulate('change', {target: {value: 'n.dufreche@gmail.com'} })
+  input.simulate('change', {target: {value: '12'} })
   expect(valid).toHaveBeenCalled()
 })
