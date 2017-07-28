@@ -63,7 +63,7 @@ it('should require the value', () => {
   expect(empty).toHaveBeenCalled()
 })
 
-it('should be onError is empty and not a digit', () => {
+it('should be onError if is empty or not a digit', () => {
   const valid = jest.fn()
   const invalid = jest.fn()
   const handleChange = ev => {
@@ -73,7 +73,7 @@ it('should be onError is empty and not a digit', () => {
       invalid()
     }
   }
-  const wrapper = mount(<Input id="test" validator={/\d+/} onChange={handleChange} required />)
+  const wrapper = mount(<Input id="test" validator={(val) => (/\d+/.test(val))} onChange={handleChange} required />)
   const input = wrapper.find('input')
   input.simulate('change', {target: {value: '12'} })
   expect(valid).toHaveBeenCalled()
