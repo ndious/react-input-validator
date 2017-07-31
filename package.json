@@ -1,5 +1,5 @@
 {
-  "name": "react-input-validator",
+  "name": "react-inputator",
   "version": "0.1.0",
   "description": "React form input validator",
   "main": "src/index.js",
